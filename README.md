@@ -14,11 +14,11 @@ You need a web server. I used python to initiate a web server.
 ```
 python --version
 Python 2.7.10
-```
 
-```
-cd graphs-from-csv/
 python -m SimpleHTTPServer
 ```
+```
+Python 3
+python -m http.server
 
 Visit http://localhost:8000 to see the website.
