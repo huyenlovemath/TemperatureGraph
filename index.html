@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html >
 	<head>
 		<title>Graphs from CSVs</title>
 		<link rel='stylesheet' href='stylesheets/style.css' />
@@ -15,14 +15,36 @@
 
 		<!-- Load papaparse.js -->
 		<script src="javascripts/papaparse.min.js"></script>
+		<style>
+		
+			.miniChart{
+				
+				display: flex;
+				flex-direction: row;
+			}
+		</style>
   	</head>
-  	<body>
+  	<body class="bg-danger">
   	
 	<br><br><br>
     	
 	<div class="container">
-    		<div id="chart"></div>
-    	</div>
+			<div id="chart"></div>
+			<br>
+			<br>
+			<div class=miniChart>
+				<div id="miniChart1"></div>
+				<div id="miniChart2"></div>
+			</div>
+			
+			<br>
+			<br>
+			<div class=miniChart>
+				<div id="miniChart3"></div>
+				<div id="miniChart4"></div>
+			</div>
+			
+    </div>
 
 	<script src="javascripts/create-graph.js"></script>
   	</body>
