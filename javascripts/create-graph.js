@@ -2,7 +2,7 @@
  * Parse the data and create a graph with the data.
  */
 function parseData(createGraph) {
-	Papa.parse("../data/kqtn2.csv", {
+	Papa.parse("../data/KQTN.csv", {
 		download: true,
 		complete: function(results) {
 			//main graph
@@ -113,11 +113,11 @@ function createGraph(data) {
 	            tick: {
 	            	multiline: false,
                 	culling: {
-                    	max: 25
+                    	max: 70
                 	}
 				},
 				label:"Times",
-				max: 25,
+				max: years.length+3,
 				min:1,
 				
 			},
